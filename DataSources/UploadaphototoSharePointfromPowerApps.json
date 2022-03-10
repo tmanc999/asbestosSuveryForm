@@ -1,0 +1,9 @@
+[
+  {
+    "AddinConnectorId": "ddbc0ee9-9610-43bf-9377-1c77cd2c22a6",
+    "AddinId": "6d1f157d-95bf-406d-b65d-cfd3240f724e",
+    "Name": "UploadaphototoSharePointfromPowerApps",
+    "ServiceKind": "AddinWadl",
+    "Type": "ServiceInfo"
+  }
+]

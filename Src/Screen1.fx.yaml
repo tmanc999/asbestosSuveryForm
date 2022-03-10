@@ -1,0 +1,34 @@
+Screen1 As screen:
+
+    pdfexport As htmlViewer:
+        Height: =1136
+        HtmlText: |-
+            ="<!DOCTYPE html>
+            <html>
+               <h3>Asbesto Site Supervision Form</h3>
+               <body>
+                  <h5>Name of Asbestos Contractor: </h5>
+                  <div>"&DataCardValue2&"</div>
+                  <h5>Name of Registered Supervisor:</h5>
+                  <div>"&DataCardValue3&"</div>
+                  <h5>Date of Supervision</h5>
+                  <div>"&DataCardValue10&"</div>
+                  <h5>Location of the inspection:</h5>
+                  <div>"&DataCardValue4&"</div>
+                  <h5>GPS location:</h5>
+                  <div>"&DataCardValue5&"</div>
+                  
+            
+                  <h5>Preparation work:</h5>
+                  <div>"&DataCardValue6&"</div>
+                  <h5>Findings / Irregularities:</h5>
+                  <div>"&DataCardValue7&"</div>
+                  <h5>Recommendations:</h5>
+                  <div>"&DataCardValue8&"</div>
+                  <h5>Signature:</h5>
+               </body>
+            </html>
+            "
+        Width: =640
+        ZIndex: =1
+

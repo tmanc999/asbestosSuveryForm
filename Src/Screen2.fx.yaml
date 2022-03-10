@@ -1,0 +1,440 @@
+"Screen2 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    LblAppName4 As label:
+        Align: =Align.Center
+        Height: =88
+        Size: =27
+        Text: ="Table"
+        Width: =496
+        X: =142
+        ZIndex: =2
+
+    FormViewer3 As formViewer:
+        DataSource: ='Mobile app'
+        Height: =918
+        Item: =BrowseGallery1.Selected
+        Width: =640
+        Y: =88
+        ZIndex: =3
+
+        Title_DataCard2 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Title"
+            Default: =ThisItem.Title
+            DisplayMode: =DisplayMode.View
+            DisplayName: |-
+                ="Name of Asbestos Contractor:"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey2 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue2 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                ZIndex: =2
+
+        "'Name of Registered Supervisor:_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NameofRegisteredSupervisor_x003a"
+            Default: |-
+                =ThisItem.'Name of Registered Supervisor:'
+            DisplayMode: =DisplayMode.View
+            DisplayName: |-
+                ="Name of Registered Supervisor:"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey3 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue3 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                ZIndex: =2
+
+        "'Date and Time_DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="DateandTime"
+            Default: =ThisItem.'Date and Time'
+            DisplayMode: =DisplayMode.View
+            DisplayName: ="Date and Time"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey10 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue10 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey10.Y + DataCardKey10.Height + 5
+                ZIndex: =2
+
+        Location_DataCard2 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Location"
+            Default: =ThisItem.Location
+            DisplayMode: =DisplayMode.View
+            DisplayName: ="Location"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey4 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue4 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                ZIndex: =2
+
+        GPS_DataCard2 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="GPS"
+            Default: =ThisItem.GPS
+            DisplayMode: =DisplayMode.View
+            DisplayName: ="GPS"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =676
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey5 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue5 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                ZIndex: =2
+
+            Image2 As image:
+                Height: =563
+                Image: |-
+                    =BingMaps.GetMap("AerialWithLabels",18,First(Split(Parent.Default, ",")).Result, Last(Split(Parent.Default, ",")).Result,
+                    {pushpin:First(Split(Parent.Default, ",")).Result & "," &
+                    Last(Split(Parent.Default, ",")).Result & ";65;"}
+                    )
+                Width: =566
+                X: =44
+                Y: =103
+                ZIndex: =3
+
+        "'Preparation work_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Preparationwork"
+            Default: =ThisItem.'Preparation work'
+            DisplayMode: =DisplayMode.View
+            DisplayName: ="Preparation work"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =5
+            ZIndex: =1
+
+            DataCardKey6 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue6 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                ZIndex: =2
+
+        "'Findings / Irregularities_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Findings_x002f_Irregularities"
+            Default: =ThisItem.'Findings / Irregularities'
+            DisplayMode: =DisplayMode.View
+            DisplayName: ="Findings / Irregularities"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =6
+            ZIndex: =1
+
+            DataCardKey7 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue7 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                ZIndex: =2
+
+        Recommendations_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Recommendations"
+            Default: =ThisItem.Recommendations
+            DisplayMode: =DisplayMode.View
+            DisplayName: ="Recommendations"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =7
+            ZIndex: =1
+
+            DataCardKey8 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue8 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
+                ZIndex: =2
+
+        Image_DataCard2 As typedDataCard.imageViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Image"
+            Default: =ThisItem.Image
+            DisplayMode: =DisplayMode.View
+            DisplayName: ="Image"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =752
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =8
+            ZIndex: =1
+
+            DataCardKey9 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            "Gallery1 As gallery.'BrowseLayout_Vertical_OneImageTwoColumnVariant_ver4.0'":
+                Height: =683
+                Items: =imagelist
+                Layout: =Layout.Vertical
+                TemplatePadding: =4
+                TemplateSize: =Min(320, Self.Height - 60)
+                Width: =580
+                WrapCount: =2
+                X: =30
+                Y: =58
+                ZIndex: =1
+
+                Image4 As image:
+                    Height: =Parent.TemplateHeight
+                    Image: =ThisItem.ThePicture
+                    ImagePosition: =ImagePosition.Fill
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    ZIndex: =1
+
+    Rectangle2 As rectangle:
+        Fill: =RGBA(136, 160, 209, 1)
+        Height: =88
+        Width: =640
+        ZIndex: =4
+
+    Icon2_1 As icon.ChevronLeft:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =47
+        Icon: =Icon.ChevronLeft
+        OnSelect: =Back()
+        Width: =48
+        X: =4
+        Y: =17
+        ZIndex: =5
+
+    Label3 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =21
+        Text: ="Project Details"
+        Width: =560
+        X: =66
+        Y: =5
+        ZIndex: =6
+
+    Button3 As button:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(136, 160, 209, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =55
+        OnSelect: |-
+            ='PowerApp->Initializevariable,Initializevariable2,Initializeva...'.Run(pdfexport.HtmlText,BrowseGallery1.Selected.Title);
+            Notify("Successfully exported", NotificationType.Success, 4000)
+        Size: =20
+        Text: ="Export to PDF"
+        Width: =222
+        X: =64
+        Y: =1056
+        ZIndex: =7
+
+    Button3_1 As button:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(136, 160, 209, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =55
+        OnSelect: =Remove('Mobile app',BrowseGallery1.Selected)
+        Size: =20
+        Text: ="Delete record"
+        Width: =222
+        X: =353
+        Y: =1056
+        ZIndex: =8
+

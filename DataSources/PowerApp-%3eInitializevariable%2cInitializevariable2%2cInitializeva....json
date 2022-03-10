@@ -1,0 +1,9 @@
+[
+  {
+    "AddinConnectorId": "b0513efc-9ad4-41cc-8ae5-6a17de74891b",
+    "AddinId": "6d1f157d-95bf-406d-b65d-cfd3240f724e",
+    "Name": "PowerApp->Initializevariable,Initializevariable2,Initializeva...",
+    "ServiceKind": "AddinWadl",
+    "Type": "ServiceInfo"
+  }
+]
